@@ -8,3 +8,8 @@ def waiting_list(request):
 
 def about(request):
   return render(request, 'home/about.html')
+
+def add_waitlist(request):
+
+  print(request)
+  return render(request, '<h1>you have joined the waitlist</h1>')
