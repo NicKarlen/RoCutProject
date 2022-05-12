@@ -35,13 +35,13 @@
             {% csrf_token %}
             <div class="form-group">
               <label for="name">How should we call you?</label>
-              <input type="text" class="form-control" id="name" placeholder="Max">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Max" minlength="3">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Max@gmail.com">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Max@gmail.com" minlength="3">
             </div>
-            <button type="submit" class="btn btn-lg btn-secondary fw-bold border-white bg-white my-3">Join</button>
+            <button type="submit" value="Submit" class="btn btn-lg btn-secondary fw-bold border-white bg-white my-3">Join</button>
           </form>
         </main>
       </div>
